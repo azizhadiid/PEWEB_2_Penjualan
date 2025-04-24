@@ -20,9 +20,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <a class="nav-link" href="/produk">Produk</a>
+                    <a class="nav-link" href="/produk/show">Data Produk</a>
                     <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                 </div>
             </div>
@@ -34,9 +34,13 @@
     {{-- End MAin Fill --}}
 
     {{-- Footer --}}
-    
+
+    {{-- Switch alert --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {{-- CDN Bootstrap 5 --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+   
     </script>
 </body>
 
