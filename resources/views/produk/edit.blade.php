@@ -40,7 +40,7 @@
                 <input type="number" class="form-control" id="harga_jual" name="harga_jual" value="{{$produk->harga_jual}}">
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
-            <a href="{{url('produk/show.index')}}" class="btn btn-secondary">Batal</a>
+            <a href="{{url('produk/show')}}" class="btn btn-secondary">Batal</a>
         </form>
     </div>
 </section>

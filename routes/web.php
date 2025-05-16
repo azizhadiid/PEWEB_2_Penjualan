@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CrudController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +29,8 @@ Route::get('/halaman', function () {
     $konten = 'harry potter and the deathly hallows: part 2';
     return view('konten.halaman', compact('title', 'konten'));
 });
+
+// Tambah
+Route::get('/tambah', [CrudController::class, 'tambah'])->name('get.tambah');
+Route::post('/tambah/proses', [CrudController::class, 'proses_tambah'])->name('post.tambah');
+Route::get('/baca', [CrudController::class, 'baca'])->name('get.baca');
