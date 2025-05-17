@@ -34,3 +34,6 @@ Route::get('/halaman', function () {
 Route::get('/tambah', [CrudController::class, 'tambah'])->name('get.tambah');
 Route::post('/tambah/proses', [CrudController::class, 'proses_tambah'])->name('post.tambah');
 Route::get('/baca', [CrudController::class, 'baca'])->name('get.baca');
+Route::get('/ubah/{id}', [CrudController::class, 'ubah'])->name('get.ubah');
+Route::patch('/ubah/{id}', [CrudController::class, 'proses_ubah'])->name('patch.ubah');
+Route::delete('/hapus/{id}', [CrudController::class, 'hapus'])->name('delete.hapus');
